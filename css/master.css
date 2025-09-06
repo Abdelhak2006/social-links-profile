@@ -1,0 +1,66 @@
+:root {
+  /* Backgrounds */
+  --clr-bg: #141414;     /* لون الخلفية الأساسية */
+  --clr-card: #1f1f1f;   /* خلفية الكارد */
+
+  /* Text */
+  --clr-white: #ffffff;  /* النص الأساسي */
+  --clr-text: #cfcfcf;   /* النص الثانوي */
+  --clr-green: #c5f82a;  /* لون الموقع والأزرار النشطة */
+
+  /* Buttons */
+  --clr-btn: #333333;    /* لون الأزرار العادية */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: var(--clr-bg);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.card {
+    background-color: var(--clr-card);
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 350px;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 10px 20px 10px;
+}
+.card h1 {
+    color: var(--clr-white);
+    margin: 10px 0 5px 0;
+}
+.card h3 {
+    color: var(--clr-green);
+    margin: 15px 0 20px 0;
+}
+.card p {
+    color: var(--clr-text);
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+}
+.card a {
+    text-decoration: none;
+    color: var(--clr-text);
+    background-color: var(--clr-btn);
+    display: block;
+    margin: 13px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+     transition: 0.3s;
+}
+.card a:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-bg);
+}
